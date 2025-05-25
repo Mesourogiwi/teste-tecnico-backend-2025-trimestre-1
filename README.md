@@ -49,7 +49,7 @@ Este teste busca avaliar as seguintes competências:
 
 # Comentários do dev ~~
 
-##Solução proposta e escolha de ferramentas
+## Solução proposta e escolha de ferramentas
 
 Para resolução desse desafio técnico, acabei utilizando a framework Nestjs. Pensei bastante acerca de utilizar o Express por ser mais simples e permitir uma maior customização no sistema de arquivos em comparação com o Nestjs, já que esse, por sua vez, é bem opinativo, principalmente pelas recipes e gerando uma estrutura pronta. O que também contribuiu para a escolha dessa ferramenta, ela simplifica algumas coisas e trazendo uma estruturação de arquivos baseado em Modules, Services e Controllers, além de acelerar alguns processos de desenvolvimento, por isso a sua escolha. De qualquer forma, usa Express por debaixo dos panos e quando precisei de alguma coisa do Express conseguia fazer isso facilmente.
 Para o cache utilizei a ferramenta que já estou acostumado e já é bem conhecida e difundida entre os devs, possuindo um grande apoio da comunidade que é o Redis.
@@ -108,7 +108,7 @@ No caso acima, temos o vídeo inteiro que a API retornou e o primeiro corte que 
 
 Também criei os arquivos do dockerfile e o docker-compose.yml.
 
-##Rodando o projeto
+## Rodando o projeto
 
 Para rodar o projeto, instale as dependências através do comando:
 
@@ -122,6 +122,6 @@ Depois simplesmente rode o comando do docker para buildar o container, contendo 
 docker compose up --build
 ```
 
-##Desafios técnicos
+## Desafios técnicos
 Minha maior dificuldade foi implementar a parte de fatia do vídeo, uma vez que nunca tinha trabalhado com upload/download de vídeos, estou mais acostumado com arquivos do tipo imagem (png, jpg) e pdfs utilizando o serviço de bucket da AWS. Essa é a primeira vez que faço a mesma coisa com vídeos .mp4. Outra parte que nunca tinha visto/usado é a possibilidade de retornar parte do arquivo, tive que estudar como fazia isso pelo header e como era seu parâmetro, além de implementar no backend e ver funcionando.
 Nos primeiros testes eu achava que tinha feito alguma coisa errada pois o vídeo simplesmente não rodava e depois percebi que dependendo do corte que é feito no arquivo, perdemos uma informação importante para o mp4 conseguir ser executado e seu conteúdo visualizado, que no caso é o moov presente no começo dos arquivos mp4 que contém os metadados e se o corte é feito de uma forma que esse conteúdo não está presente, o vídeo simplesmente não roda.
