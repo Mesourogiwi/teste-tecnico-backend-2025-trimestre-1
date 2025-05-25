@@ -55,7 +55,7 @@ Para resolução desse desafio técnico, acabei utilizando a framework Nestjs. P
 Para o cache utilizei a ferramenta que já estou acostumado e já é bem conhecida e difundida entre os devs, possuindo um grande apoio da comunidade que é o Redis.
 Além disso, a API acabou sendo RESTFul. Outra opção seria o GraphQL pois tem algumas opções de cache embutida, mas acabei optando pela simplicidade do Restful nesse caso.
 
-##Testes e implementação
+## Testes e implementação
 Para testar a aplicação comecei com a parte de upload utilizando o Insomnia (aqui poderia ser Postman, ThunderClient, Swagger, Curl, etc) por já ter familiaridade com a ferramenta. No primeiro teste fiz o fluxo feliz, subindo um arquivo do tipo mp4 e menor que 10mb:
 
 ![image](https://github.com/user-attachments/assets/4ad570d8-0d73-4d48-8b0e-6cc06a017fde)
